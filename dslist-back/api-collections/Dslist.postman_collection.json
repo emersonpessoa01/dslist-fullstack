@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "fd9d45ca-00e7-4cfa-b552-2d542cbac64d",
+		"name": "Dslist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41098416"
+	},
+	"item": [
+		{
+			"name": "Buscar games",
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/11.4.0"
+					}
+				],
+				"url": {
+					"raw": "{{ _.url }}/games",
+					"host": [
+						"{{ _.url }}"
+					],
+					"path": [
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar games por id",
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/11.4.0"
+					}
+				],
+				"url": {
+					"raw": "{{ _.url }}/games/2",
+					"host": [
+						"{{ _.url }}"
+					],
+					"path": [
+						"games",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Listas de Games",
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/11.4.0"
+					}
+				],
+				"url": {
+					"raw": "{{ _.url }}/lists",
+					"host": [
+						"{{ _.url }}"
+					],
+					"path": [
+						"lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Games por listas",
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/11.4.0"
+					}
+				],
+				"url": {
+					"raw": "{{ _.url }}/lists/1/games",
+					"host": [
+						"{{ _.url }}"
+					],
+					"path": [
+						"lists",
+						"1",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Games reposicionada",
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "insomnia/11.4.0"
+					}
+				],
+				"url": {
+					"raw": "{{ _.url }}/lists/1/games",
+					"host": [
+						"{{ _.url }}"
+					],
+					"path": [
+						"lists",
+						"1",
+						"games"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
